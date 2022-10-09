@@ -9,3 +9,4 @@ For this project, we made use of a lot of HTML, CSS & JavaScript as well as Adob
 a very unique website that has everything designed by hand.
 
 !! In the end, the bar actually decided to use the website we programmed for them as their OFFICIAL WEBSITE !!
+We even had a "release party" for the website - see it here on facaebook: https://fb.me/e/1YPM1miwG
