@@ -1,0 +1,825 @@
+/*HOW IT WOULD LOOK*/
+/* Mobile view  */
+@media only screen and (max-width: 899px) {
+
+  body {
+    background-image: url(/Pictures/backgrounds/mobile/aboutus_mobile.png), url(/Pictures/aboutpng/lilrainbow_aboutus.svg), url(/Pictures/aboutpng/aboutus_photo.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 10000px, 100% auto, 300px auto;
+    background-position: center, center, center;
+    background-position-y: 18vh, 37vh, 65vh;
+  }
+
+  /* .onclick-aboutus{
+        display: none;
+    }
+    
+    .error{
+        margin-left: 60px;
+        margin-right: 60px;
+    } */
+}
+
+/* PC view  */
+@media only screen and (min-width: 900px) {
+  .error {
+    display: none;
+  }
+  body {
+    background-image: url(/Pictures/aboutpng/rainbow_aboutus.png), url(/Pictures/backgrounds/desktop/aboutus_pc.png), url(/Pictures/aboutpng/aboutus_photo.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 1600px, 100% 10000px, 700px auto;
+    background-position: center, center, center;
+    background-position-y: 18vh, 0vh, 35vh;
+  }
+
+ 
+
+ 
+
+
+
+
+  /* .heading-aboutus {
+        background-image: url(/Pictures/about-us2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1250vh;
+    }
+    
+    .onclick-aboutus {
+        background-image: url(/Pictures/onclick-about-us.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+
+  .onclick-aboutus-button {
+    margin-top: 33rem;
+    margin-left: 44rem;
+    width: 250px;
+    height: 30%;
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+  }
+}
+
+.title {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  text-align: center;
+  z-index: -2;
+}
+
+/*OUR STORY  - STYLES*/
+
+/*THe lorem ipsum cards*/
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+}
+
+.concert-booking-card-home {
+  align-self: flex-end;
+}
+
+.card {
+  border: 2px solid #f4e7bf;
+
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 15px;
+  /* height: 120px; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.jaj {
+  align-self: flex-end;
+}
+
+/* Web*/
+/*The flower navigation*/
+
+#flower {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  left: 0px;
+  width: 400px;
+}
+
+#flowerclosed {
+  margin-top: -250px;
+}
+
+.orangeline {
+  margin-left: 90px;
+}
+
+#navlist {
+  list-style-image: url(/Pictures/aboutpng/dot.svg);
+  color: #fd910a;
+  width: 10px;
+  position: absolute;
+  top: 300px;
+  left: 167px;
+  padding-top: 20px;
+}
+
+.navlistitem:hover {
+  text-decoration: underline;
+}
+
+.navlistitem {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+  color: #fd910a;
+  vertical-align: center;
+}
+
+#ourstory {
+  position: absolute;
+  top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+li {
+  width: 100px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.storytext {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #f4e7bf;
+  overflow: hidden;
+}
+
+.storytexts {
+  width: 300px;
+  padding: 10px;
+  border: #f4e7bf 2px solid;
+  box-shadow: 5px 7px #f4e7bf;
+  border-radius: 15px;
+  background: #1f1f1f;
+}
+
+.storychapter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+
+.storycontainer {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 980px;
+  margin-top: 400px;
+}
+
+.larsimage {
+  position: absolute;
+  width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 880px;
+  z-index: -2;
+}
+
+.larsimage-face {
+  position: absolute;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 1800px;
+  z-index: -2;
+}
+
+#usimage {
+
+  width: 600px;
+}
+
+.push {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.jajj {
+  text-align: right;
+}
+
+.us {
+  padding-top: 100px;
+}
+
+#thisisus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 770px;
+}
+
+#ourmission {
+  position: relative;
+  margin-top: 300px;
+}
+
+.missiontext {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  max-width: 600px;
+  padding: 10px;
+  color: #f4e7bf;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.symbolssection {
+  padding-bottom: 50px;
+}
+
+.symbolstitle {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 550px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.symbolsdescription {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  max-width: 600px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1F1F1F;
+  overflow: hidden;
+}
+
+.symbolcard {
+  width: 230px;
+  box-shadow: 5px 7px #fd910a;
+  border-radius: 30px;
+  background-color: #1f1f1f;
+  margin-top: 200px;
+  transition: 0.3s;
+}
+
+.symbolcards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.symbolcard:hover {
+  transform: scale(1.05);
+}
+
+#person {
+  margin-top: 200px;
+}
+
+.bigtext {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bolder;
+  padding-top: 100px;
+  font-size: 130px;
+  color: #1F1F1F;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.bigtextm {
+  display: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  color: #1F1F1F;
+  overflow: hidden;
+}
+
+.symbolsmalld {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #1F1F1F;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.symboltext {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #1F1F1F;
+  overflow: hidden;
+}
+
+.symcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 800px;
+  padding-left: 30px;
+  gap: 20px;
+
+}
+
+.symitem {
+  margin-top: -50px;
+  text-align: left;
+
+}
+
+.symbol {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#person {
+  margin-top: 300px;
+}
+
+.right {
+
+  text-align: right;
+}
+
+/* Music easter egg */
+
+/* Setting the button in place */
+.button-div {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: 495vh;
+  right: 200px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.299);
+  z-index: 0;
+}
+
+.button-box {
+  width: 10vw;
+  height: 10vw;
+  z-index: 9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-button {
+  position: relative;
+  z-index: 11;
+  top: -7.4vw;
+  left: 3vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+}
+
+.button-img {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.299);
+}
+
+.button-img:active {
+  transform: scale(0.98);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.299);
+}
+
+/* Deletes button's default styling */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/*Web responsivity*/
+
+#mobileface {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .missiontext {
+    width: 400px;
+  }
+}
+
+#face {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 1;
+  animation: dash 40s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 600;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#face-path-pc {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 1;
+  animation: dash 15s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 600;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#facepath {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 0;
+  animation: dash1 15s linear infinite;
+}
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 4000;
+  }
+
+  to {
+    stroke-dashoffset: 30000;
+  }
+}
+
+/* Phone*/
+@media only screen and (max-width: 900px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  /*Our story*/
+
+  .musicbutton {
+    display: none;
+  }
+
+  #ourstory {
+    width: 30%;
+    padding-top: 100px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: auto;
+
+  }
+
+  h2 {
+    width: 160px;
+    max-height: 120px;
+    font-size: 24px;
+    text-align: left;
+
+  }
+
+  .jajj {
+
+    text-align: left;
+  }
+
+  .storytext {
+    font-size: 18px;
+  }
+
+  .storycontainer {
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .storychapter {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+  .larsimage {
+    display: none;
+  }
+
+  .larsimage-face {
+    display: none;
+  }
+
+  /*The main image*/
+  /*Flower navigation*/
+  #flower {
+    margin-top: -80px;
+    width: 50%;
+    padding: 0px;
+  }
+
+  .flowerimage {
+    width: 150px;
+  }
+
+
+  #floweropen {
+    margin-top: -120px;
+    width: 100%;
+    padding: 0px;
+
+  }
+
+  #flowerclosed {
+    width: 100%;
+    padding: 0px;
+    margin-top: -160px;
+    padding-left: 20px;
+  }
+
+  #navlist {
+    margin-top: -120px;
+    left: 118px;
+  }
+
+  #usimage {
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+  }
+
+  #thisisus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 620px;
+  }
+
+  .us {
+
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #mobileface {
+
+    display: block;
+    position: absolute;
+    top: 750px;
+    z-index: -2;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .push {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .storychapter {
+    margin-bottom: 300px;
+  }
+
+  /*Our mission*/
+  .card {
+
+    width: auto;
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .missiontext {
+    width: 90%;
+  }
+
+  #ourmission {
+    margin-top: 100px;
+  }
+
+  .cards {
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+  /*Symbols*/
+
+  .symbolstitle {
+    margin-top: 450px;
+  }
+
+  .symbolsdescription {
+    width: 90%;
+  }
+
+  .symbolcard {
+    width: 100px;
+    margin-top: 50px;
+  }
+
+  .bigtext {
+    font-size: 100px;
+    width: 90%;
+  }
+
+  .symcontainer {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #person {
+    margin-top: 100px;
+  }
+
+  .symcard {
+    box-shadow: 5px 7px #fd910a;
+    border-radius: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p1 {
+    font-size: 12px;
+  }
+
+  .bigtext {
+    display: none;
+  }
+
+  .bigtextm {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .symcontainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .symitem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .benchy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .symboltext {
+    width: 80%;
+  }
+
+  .symbolsmalld {
+    padding: 5px;
+  }
+
+  .symitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .symbolcard {
+
+    border-radius: 15px;
+    border: 2px solid #1f1f1f;
+
+  }
+
+  #face-path-pc {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 0;
+    animation: dash 40s linear;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 4000;
+    }
+
+    to {
+      stroke-dashoffset: 20000;
+    }
+  }
+}
+
+.footertitle {
+  text-align: center;
+  width: 100%;
+}

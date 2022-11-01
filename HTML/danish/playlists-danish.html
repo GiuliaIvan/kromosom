@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Linking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Linking -->
+  <link rel="stylesheet" href="/CSS/navfooter.css">
+  <link rel="stylesheet" href="/CSS/basicstyles.css">
+  <link rel="stylesheet" href="/CSS/playlists.css">
+
+  <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+  <title>Kromosom - Our playlists</title>
+</head>
+
+<body>
+
+  <!-- Start of the NAVBAR coding-->
+  <nav>
+    <!--For mobile-->
+    <div class="mobilenav">
+      <div class="navbar"></div>
+      <a href="/HTML/danish/home-danish.html"><img class="toplogo" alt="menuicon" src="/Pictures/logo_little.png"></a>
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="/HTML/danish/home-danish.html" class="menuitem">HJEM</a>
+          <a href="/HTML/danish/menucafe-danish.html" class="menuitem">MENU</a>
+          <a href="https://www.facebook.com/Kromosom66/events/?ref=page_internal" class="menuitem">BEGIVENHEDER</a>
+          <a href="/HTML/danish/aboutus-danish.html" class="menuitem">OM OS</a>
+          <a href="/HTML/danish/gallery-danish.html" class="menuitem">GALLERI</a>
+          <a href="/HTML/danish/playlists-danish.html" class="menuitem">VORES PLAYLISTER</a>
+          <a href="/HTML/danish/contact-danish.html" class="menuitem">KONTAKT OS</a>
+          <form style="display: inline" action="/HTML/danish/playlists-danish.html" method="get"><button class="languagebutton dk">DK</button>
+          </form> &nbsp; <form style="display: inline" action="/HTML/playlists.html" method="get"><button
+              class="languagebutton en">EN</button></form>
+          <div class="langcontainer">
+            <img class="langlogo" alt="lang" src="/Pictures/beige_person.png">
+            <p class="langchangetext">VIL DU ÆNDRE <BR> SPROGET?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openNav()"></span>
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="/Pictures/burger-img.png" width="30"
+          height="25">
+      </span>
+
+    </div>
+  </nav>
+  <!-- End of the NAVBAR coding -->
+
+
+  <main>
+
+    <div class="container">
+
+      <!-- Little man with text -->
+      <div class="facebookmention">
+        <img src="/Pictures/logo_little.png" alt="logo" width="40">
+        <p class="check" style="color: black;">VIL DU CHECKE<br>VORES MUSIK UD?</p>
+      </div>
+
+      <!-- Title -->
+      <div class="heading">
+        <h1>VORES<br>PLAYLISTER</h1>
+      </div>
+
+      <div class="row">
+
+        <!-- The sun vinyl section -->
+        <div class="vinyls sun-vinyl">
+          <a href="#day-spotify">
+            <img class="vinyl-sun sun-vinyl-mobile" id="sun-vinyl" src="/Pictures/vinyl-sun.png"
+              alt="A vinyl image with a sun in the middle" style="cursor: pointer;" />
+          </a>
+        </div>
+
+        <!-- Day Spotify Iframe import -->
+        <div class="card" id="day-spotify">
+          <div class="card-header">
+            <h1>CHILL OM<br>DAGEN</h1>
+          </div>
+          <div class="card-body">
+            <iframe class="iframe-vinyl-sun"
+              src="https://open.spotify.com/embed/playlist/53yRtUq1VZvwsLKEKkuNdF?utm_source=generator" frameBorder="0"
+              allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+
+            <!-- What's the Vibe of the Spotify playlist info box -->
+            <div class="btn day-btn">
+              <h2 class="description-spotify">HVAD ER VIBEN?</h2>
+              <p class="description-spotify" style="color: #1F1F1F; font-family: 'Space Grotesk'; font-size: 15px;"><br><br>
+                Engelsk eller Dansk? Hvad foretrækker du?<br>
+                Danse eller arbejde? Giv det et skud!<br>
+                Kaffe og tuborg stopper din sorg<br>
+                Thy pils og cappuccino - så føler du dig fino!<br>
+                Nu eller aldrig - lyt til vores playliste
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The moon vinyl section -->
+        <div class="vinyls">
+          <a href="#night-spotify">
+            <img class="vinyl-moon moon-vinyl-mobile" id="moon-vinyl" src="/Pictures/vinyl-moon.png"
+              alt="A vinyl image with a moon in the middle" style="cursor: pointer;" />
+          </a>
+        </div>
+
+        <!-- Night Spotify Iframe import -->
+        <div class="card" id="night-spotify">
+          <div class="card-header">
+            <h1>FEST OM<br>AFTENEN</h1>
+          </div>
+          <div class="card-body">
+            <iframe class="iframe-vinyl-moon"
+              src="https://open.spotify.com/embed/playlist/1kN8ZKn434Xbc8zq882e6W?utm_source=generator" frameBorder="0"
+              allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+
+            <!-- What's the Vibe of the Spotify playlist info box -->
+            <div class="btn night-btn">
+              <h2 class="description-spotify">HVAD ER VIBEN?</h2>
+              <p class="description-spotify" style="color: #F4E7BF; font-family: 'Space Grotesk'; font-size: 15px;"><br><br>
+                Mørkere udenfor, men vi får energien til at lyse!<br>
+                Vores musikudvalg får dig til at trives,<br>
+                Der er mange nye venner du kan møde i nat,<br>
+                Så kom nu, vær med, mærk at du er i live!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Start of the FOOTER coding -->
+  <!-- Footer -->
+  <footer>
+    <div class="footercontainer">
+      <!-- Opening hours -->
+      <div class="footeritem">
+        <h2 class="footertitle openinghours">ÅBNINGSTIDER</h2>
+      </div>
+      <div class="footeritem">
+        <table>
+          <tbody>
+            <tr>
+              <th class="day">Mandag</th>
+              <th>Lukket</th>
+            </tr>
+          <tbody>
+            <tr class="hoursrow">
+              <td class="day">Tirsdag</td>
+              <td>14:00 - 22:00</td>
+            </tr>
+            <tr class="hoursrow">
+              <td class="day">Onsdag</td>
+              <td>14:00 - 22:00</td>
+            </tr>
+            <tr class="hoursrow">
+              <td class="day">Torsdag</td>
+              <td>14:00 - 24:00</td>
+            </tr>
+            <tr class="hoursrow">
+              <td class="day">Fredag</td>
+              <td>14:00 - 02:00</td>
+            </tr>
+            <tr class="hoursrow">
+              <td class="day">Lørdag</td>
+              <td>14:00 - 02:00</td>
+            </tr>
+            <tr class="hoursrow">
+              <td class="day">Søndag</td>
+              <td>Lukket</td>
+            </tr>
+          </tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Address  -->
+      <div class="footeritem">
+        <h2 class="footertitle">ADRESSE</h2>
+        <p>Nørre Allé 66,</p>
+        <p>8000 Aarhus</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footeritem">
+        <h2 class="footertitle">SOCIALE MEDIER</h2>
+
+        <div class="socialscontainer social-media">
+          <a href="https://www.facebook.com/Kromosom66">
+            <img class="socials_image fbk" id="fbk-icon" src="/Pictures/fb-icon.png" alt="Facebook">
+            <!-- Rainbow icon of facebook display none when the mouse is not over it -->
+            <img style="display: none;" class="socials_image fbk" id="fbk-icon-rainbow"
+              src="/Pictures/fb-icon-rainbow.png" alt="Fbk rainbowish">
+          </a>
+          <a href="https://www.instagram.com/kromosom66/">
+            <img class="socials_image" id="ig-icon" src="/Pictures/ig-icon.png" alt="Instagram">
+            <!-- Rainbow icon of instagram display none when the mouse is not over it -->
+            <img style="display: none;" class="socials_image" id="ig-icon-rainbow" src="/Pictures/ig-icon-rainbow.png"
+              alt="Ig rainbowish">
+          </a>
+        </div>
+      </div>
+
+      <!-- Icon image with text and Copyright -->
+      <div class="footeritem footerlogo">
+        <img class="langlogo" alt="lang" src="/Pictures/beige_person.png">
+      </div>
+
+      <!-- Greeting text -->
+      <div class="footeritem">
+        <p class="smallmessage">
+          VI GLÆDER OS<br> TIL AT SE DIG!
+        </p>
+      </div>
+
+      <div class="footeritem footercopyright">
+        <p class="copyright">© 2022 KROMOSOM. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End of the FOOTER coding -->
+
+  <script>
+    // --- BURGER MENU actions ---
+    // Opens the Burger Menu
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    // Closes the Burger Menu
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+  <!-- JS files linking -->
+  <script src="/JavaScript/playlists.js"></script>
+  <script src="/JavaScript/footer.js"></script>
+
+</body>
+
+</html>

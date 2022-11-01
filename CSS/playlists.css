@@ -1,0 +1,258 @@
+/* HTML page scrolls smoothly when a button that leads to a section is pressed */
+html {
+    scroll-behavior: smooth;
+}
+
+/* the h1 "OUR PLAYLISTS" styling */
+.heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Containers with the Person&Text, title, Vinyl, Spotify playlist and Vibe-box */
+.container {
+    /* margin-top: 80px; */
+    margin-top: 20vh;
+
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.vinyls {
+    /* margin-bottom: 150px; */
+    transition: 0.5s ease-in-out;
+}
+
+.vinyls:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+.vinyl-sun {
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.vinyl-moon {
+    width: 400px;
+    /* margin-top: 800px; */
+
+    margin-top: 80vh;
+    margin-bottom: 50px;
+}
+
+.iframe-vinyl-sun {
+    border-radius:12px;
+    width: 90%;
+    height: 380px;
+    transition: 0.3s;
+}
+
+.iframe-vinyl-sun:hover {
+    transform: scale(1.05);
+}
+
+.iframe-vinyl-moon {
+    border-radius:12px;
+    width: 90%;
+    height: 380px;
+    transition: 0.3s;
+}
+
+.iframe-vinyl-moon:hover {
+    transform: scale(1.05);
+}
+
+body {
+    background-image: url("/Pictures/backgrounds/desktop/playlist-small_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Set display to none for day-spotify*/
+#day-spotify {
+    display: none;
+}
+
+/* Set display to none for night-spotify*/
+#night-spotify {
+    display: none;
+}
+
+.facebookmention{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.check {
+    font-size: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 15px;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    flex-flow: column;
+    /* align-content: center; */
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.card-header:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s;
+    
+}
+
+.card-body .btn {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    padding: 80px 50px;
+}
+
+.btn {
+    border-radius: 12px;
+    border: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    background-color: #F4E7BF;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.socialscontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 1s;
+}
+
+.night-btn{
+    background-color: #1f1f1f;
+}
+
+.description-spotify {
+    text-align: left;
+}
+
+    /* -------- MEDIA QUERIES -------- */
+@media screen and (max-width: 1000px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .vinyls {
+        margin-bottom: 110px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    body {
+        background-image: url("/Pictures/backgrounds/mobile/playlist-extended_mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .facebookmention{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-top: 170px;
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 10vh;
+        margin-bottom: 0px;
+    }
+
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .vinyl-sun {
+        width: 200px;
+    }
+
+    .vinyl-moon {
+        width: 200px;
+        /* margin-top: 0px; */
+        margin-top: 40vh;
+    }
+
+    .vinyls {
+        margin-bottom: 5px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    #day-spotify {
+        display: block;
+    }
+
+    #night-spotify {
+        display: block;
+    }
+
+    /* .card-body .day-btn {
+        margin-bottom: 350px;
+    } */
+
+    .night-btn {
+        margin-bottom: 35vh;
+    }
+
+    .description-spotify {
+        text-align: center;
+    }
+}

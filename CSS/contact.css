@@ -1,0 +1,323 @@
+/* ------------ CONTACT US CONTAINER ----------- */
+body {
+    background-image: url("/Pictures/backgrounds/mobile/contactus_mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-us-container {
+    margin: 15vw 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6vh;
+}
+
+.card {
+    border: 2px solid #F4E7BF;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials_contact-img {
+    width: 96px;
+    height: auto;
+    margin-left: -25px;
+}
+
+.concert-booking-card {
+    align-self: flex-end;
+}
+
+/* ------------ OPENING HOURS CONTAINER ----------- */
+.brain-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 80px 20px 50px;
+    margin-top: 36vh;
+}
+
+
+
+.day-card {
+    border: 2px solid #1F1F1F;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 30px;
+    box-shadow: 5px 5px#fd910a;
+    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+    background-color: #F4E7BF;
+    margin-bottom: 15px;
+}
+
+/* ------------ LOCATION CONTAINER ----------- */
+.location {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-bottom: 50px;
+    z-index: -1;
+}
+
+.location-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* ---- MAP ---- */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: auto;
+    width: 90%;
+    overflow: hidden;
+    background-color: #55CCD3;
+    box-shadow: #55CCD3 0px 0px 0px 3px, 
+    #009481 0px 0px 0px 6px, 
+    #F8A7AC 0px 0px 0px 9px, 
+    #EC5563 0px 0px 0px 12px, 
+    #FD910A 0px 0px 0px 15px, 
+    #000000 0px 0px 30px 0px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+}
+
+/* Barbies easter egg */
+
+/* Setting the barbies in place */
+.barbies-div {
+    position: relative;
+    bottom: 1980px;
+    overflow: visible;
+}
+
+.barbies {
+    height: 250px;
+    width: auto;
+    transform: rotate(20deg);
+    position: absolute;
+    left: -30px;
+    bottom: -2150px;
+    z-index: 2;
+}
+
+/* You cannot hover on mobile, so when clicked the animation is turned on and after barbies go back to original position */
+.barbies:hover {
+    animation-name: animation;
+    animation-duration: 4s;
+}
+
+@keyframes animation {
+    0% {
+        left: -30px;
+        bottom: -2150px;
+    }
+
+    30% {
+        left: 50px;
+        bottom: -1980px;
+    }
+    75% {
+        left: 50px;
+        bottom: -1980px;
+    }
+
+    100% {
+        left: -30px;
+        bottom: -2150px;
+    }
+
+
+}
+
+/* Deletes button's default styling */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Makes the barbies hide behing the footer */
+.footercontainer {
+    position: relative;
+    z-index: 10;
+}
+
+/* Barbies easter egg */
+
+
+/*------------------MEDIA QUERIES---------------------*/
+
+/*----- DESKTOP -----*/
+@media screen and (min-width:900px) {
+
+    body {
+        background-image: url("/Pictures/backgrounds/desktop/contactus_ver2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ------------ CONTACT US CONTAINER ----------- */
+    .contact-us-container {
+        margin-top: 5vh;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vw;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3vh;
+    }
+
+    .card {
+        border: 2px solid #F4E7BF;
+        border-radius: 20px;
+        padding: 10px 20px;
+        height: 8vw;
+        min-width: 21vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .socials_contact-img {
+        width: 6vw;
+        height: auto;
+        margin-left: -25px;
+    }
+
+    .concert-booking-card {
+        align-self: flex-end;
+    }
+
+    /* ------------ OPENING HOURS CONTAINER ----------- */
+    .brain-container {
+        /* margin-top: 60vh; */
+        padding: 0px 20px 0px;
+    }
+
+    .day-cards {
+        flex-wrap: wrap;
+        flex: 60px;
+        max-height: 600px;
+        height: 60vh;
+        width: 30%;
+        /* margin-left: -10vw; */
+    }
+
+    /* ------------ LOCATION CONTAINER ----------- */
+    .location {
+        position: relative;
+        margin-top: 15vh;
+        padding-bottom: 50px;
+        z-index: 0;
+    }
+
+    .location-header {
+        margin-bottom: 4vh;
+    }
+
+    .location-text-container {
+        padding-bottom: 6vh;
+    }
+
+    /* ---- MAP ---- */
+    .mapouter {
+        position: relative;
+        width: 70%;
+    }
+
+    /* Barbies easter egg */
+
+    .barbies-div {
+        position: relative;
+        bottom: 10px;
+        overflow: visible;
+
+    }
+
+    .barbies {
+        height: 350px;
+        width: auto;
+        transform: rotate(30deg);
+        position: absolute;
+        left: -40px;
+        bottom: -245px;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .barbies:hover {
+        left: 50px;
+        bottom: -10px;
+        transition: 1.5s;
+        animation: none;
+    }
+
+    .openinghours{
+        margin-top: 180px;
+    }
+}
+    /* Barbies easter egg */
+
+
+@media screen and (max-width:900px) {
+    .day-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        /* gap: 40px; */
+        justify-content: center;
+    }
+
+    .openinghours-mobile, .location-header-danish {
+        font-size: 50px;
+    }
+
+    .openinghours-contact{
+        margin-top: 30px;
+    }
+}
